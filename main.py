@@ -10,21 +10,20 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 #Eazy Level - Order not randomised: 
-#e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 
-ls_letters = ''
+
+ls_letters = 0 
 for ll in range(1, nr_letters + 1) :
 	ls_letters = random.choice(letters)
+	
+ls_number = 0 
+for ln in range(1, nr_letters + 1) :
+	ln_number = random.choice(numbers)
+	
+ls_symbols = 0 
+for ll in range(1, nr_letters + 1) :
+	ls_symbols = random.choice(symbols)
 
-ls_number = ''
-for ln in range(1, nr_numbers + 1) :
-	ls_number = random.choice(numbers)
+print(ls_letters,ls_number,ls_symbols)
 
-ls_symbols = ''
-for ls in range(1, nr_symbols + 1) :
-	ls_symbols = random.choice(symbols) += ls_symbols
-			
-print(ls_letters, ls_number,ls_symbols)
 
-#Hard Level - Order of characters randomised:
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
