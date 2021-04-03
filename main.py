@@ -27,5 +27,9 @@ print('\n')
 random.shuffle(total_passsword)
 print(total_passsword)
 
-
-
+password = ""
+for i in total_passsword :
+	password += i
+print('\n')
+print('\n')
+print(password)
